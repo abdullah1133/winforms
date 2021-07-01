@@ -1,0 +1,22 @@
+<!--
+    This props file comes from dotnet/winforms. It gets ingested by dotnet/wpf and processed by
+    packaging/Microsoft.NET.Sdk.WindowsDesktop project.
+    
+    It is referenced via Microsoft.NET.Sdk.WindowsDesktop/targets/Microsoft.NET.Sdk.WindowsDesktop.props.
+   -->
+
+<Project>
+
+  <ItemGroup Condition=" '$(UseWindowsForms)' == 'true' ">
+    <!--
+      SDK defines the following global usings:
+      * System
+      * System.Collections.Generic
+      * System.Linq
+      * System.Threading.Tasks
+    -->
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+</Project>
